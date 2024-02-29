@@ -33,6 +33,18 @@
                 border-top: none; /* To avoid double border */
                 margin-bottom: 5px;
             }
+
+    /* Sticky header CSS */
+    .navbar {
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: rgb(145, 47, 47); /* Ensure the background matches your design */
+    }
+
+
+
         </style>
 
     </head>
@@ -42,7 +54,7 @@
 
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="index.html"><img src="logored.png" style="height: 2.5em; width: 2.5em;"></a>
+                <a class="navbar-brand" href="index.html"><img src="redlogo.png" style="height: 2em; width: 16em;"></a>
                 <!-- links -->
                 <div class="d-flex">
                     <a class="btn btn-primary" href="agenda.html">Agenda</a>
@@ -57,80 +69,23 @@
 
         
 
-        <!-- Masthead-->
         <div class="container position-relative" style="background-color: rgb(145, 47, 47);">
-        <header class="masthead">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="text-center text-white">
-                            <!-- coming up top banner -->
-            
-                            <!-- Page heading-->
-                            <img src="cgfmain.png" style="height: 12em; width: 12em;">
-                            <!-- <div class="image-container" style="align-content: center;"><img src="logo.png" style="width:12em;"></div> -->
-                            <h2 class="mb-2" style="color: #ffffff; font-size: 5em;">CHINA GULF FORUM</h2>
-            <br><br>
-                            <!-- register button for link:  -->
-                            <a href="register.html" class="btn btn-primary" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Register</a>
-
-                            <br>
-                            <br>
-
-               </div>
+            <header class="masthead">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6">
+                            <div class="text-center text-white">
+                                <!-- Page heading-->
+                                <img src="cgfmain.png" style="height: 12em; width: 12em;">
+                                <h2 class="mb-2" style="color: #ffffff; font-size: 5em;">China - Gulf Forum</h2>
+                <br><br>
+                                <!-- register button for link: -->
+                                <a href="register.html" class="btn btn-primary" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Register</a>
+                <br><br>
+                   </div>
+                        </div>
                     </div>
+                </header>
                 </div>
-            </div>
-            
-        </header>
-        <script>
-            const scr1 = 'https://script.google.com/macros/s/AKfycbzOUOepm7GEwW9AYmf6M';
-            const scr2 = '-xMWgFd3jUo3ACyRS7VHknWJGMQPbEJt2BGj6pzz1Jrddv-/exec';
-            const scriptURL = scr1 + scr2;
-            const form = document.forms['submit-to-google-sheet'];
-            const emailInput = form.elements['email'];
-            const submitButton = form.querySelector('button[type="submit"]');
-        
-            form.addEventListener('submit', e => {
-                e.preventDefault();
-        
-                // Disable the email input and submit button
-                emailInput.disabled = true;
-                submitButton.disabled = true;
-        
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => {
-                        console.log('Success!', response);
-                        const successMessage = document.getElementById('success-message');
-                        successMessage.innerText = 'Registration successful!';
-                        successMessage.style.display = 'block';
-        
-                        // Hide the success message after 5 seconds
-                        setTimeout(() => {
-                            successMessage.style.display = 'none';
-                        }, 5000); // 5000 milliseconds = 5 seconds
-        
-                        // Re-enable the email input and submit button after 10 seconds
-                        setTimeout(() => {
-                            emailInput.disabled = false;
-                            submitButton.disabled = false;
-                        }, 10000); // 10000 milliseconds = 10 seconds
-                    })
-                    .catch(error => {
-                        console.error('Error!', error.message);
-                        emailInput.disabled = false;
-                        submitButton.disabled = false;
-                        // Optionally, handle errors here
-                    });
-            });
-        
-            // Hide the success message on page load
-            window.onload = () => {
-                document.getElementById('success-message').style.display = 'none';
-            };
-        </script>
-        
-        
-
 
 
         <!-- Image Showcases-->
@@ -138,7 +93,7 @@
             <div class="row g-0">
                 <div class="col-lg-6 text-white showcase-img" style="background-image: url('waterripple.jpg')"></div>
                 <div class="col-lg-6 my-auto showcase-text">
-                    <h2>About China Gulf Forum</h2>
+                    <h2 style="color: rgb(145, 47, 47);">About China Gulf Forum</h2>
                     <p class="lead mb-0">The China-Gulf Forum was launched in 2019 at New York University Abu Dhabi (NYUAD) and is the first student-organized conference on China-Gulf relations in the United Arab Emirates. Over the past three iterations, China-Gulf Forum has accumulated over 1000 attendees from all over the world.
                     </p>
                 </div>
@@ -153,92 +108,9 @@
                 </div>
             </div>
         </section>
+
         
-        <!-- cc 2023-->
-        <!-- <div id="cc2023">
-        <section class="testimonials text-center bg-light">
-            <div class="container">
-                <h2 class="mb-5">ielab launch <br> October 30th, 5pm <br> C2 W002 West Forum</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-        
-                            <h3>What</h3>
-                            <p class="font-weight-light mb-0">An event brought to you
-                                by the ielab, where you meet like minded people who are interested in
-                                learning to tackle problems
-                                and solve them through
-                                entrepreneurship
-                                </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-        
-                            <h3>Why</h3>
-                            <p class="font-weight-light mb-0">Entrepreneurship is one of
-                                the greatest ways to drive
-                                change in the world and in
-                                our community
-                                </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-        
-                            <h3>When & Where</h3>
-                            <p class="font-weight-light mb-0">October 30th, 5pm <br> C2 W002 West Forum</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        </div> -->
-        
-        
-        
-        <section class="testimonials1 text-center bg-light">
-            <div class="container">
-                <h1 class="mb-5">Support Offered</h1>
-            </div>
-        </section>    
-        
-        
-        
-        
-        <section class="showcase">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('nyuad.jpg')"></div>
-                    <div class="col-lg-6 my-auto showcase-text">
-                        <h2>Capstone Support</h2>
-                        <p class="lead mb-0">
-                            This pioneering Entrepreneurship Capstone seminar will take students through the essential elements of entrepreneurship and venture creation (including design thinking, idea generation, project finance, property rights protection, and prototyping). Students who complete this Capstone Seminar may finish with a significantly advanced entrepreneurial endeavor that can be further developed during the Capstone Project.
-        
-                            <a href="https://nyuad.nyu.edu/en/academics/undergraduate/majors-and-minors/business-organizations-and-society-major/capstone-options.html">Learn More</a>
-                        </p>
-                    </div>
-                </div>
-        
-        
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('waterripple.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>NYU Entrepreneurial Institute Support</h2>
-                        <p class="lead mb-0">
-                            <br> 
-                            Coaching: Interested students can begin with individual online coaching 
-                            sessions, tailored to address initial questions and discuss new ideas. <br><br>
-                            Startup Accelerator Program: Following coaching, students have the opportunity to join the NYU Startup Accelerator Program, encompassing several initiatives:
-                            <br> 
-                            <a href="https://entrepreneur.nyu.edu/resource/startup-accelerator-program/">Learn More about the Startup Accelerator Program</a>
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        
+ 
 
             <!-- partners and sponsors -->
             <div class="container">
