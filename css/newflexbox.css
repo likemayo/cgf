@@ -1,0 +1,13 @@
+.showcase {
+    display: flex;
+    justify-content: center; /* Centers items along the line (left to right) */
+    align-items: center; /* Centers items along the cross-axis (top to bottom) */
+    color: #fff; /* Assuming you want white text */
+}
+
+.showcase-img {
+    width: 100%; /* Makes the image take up the full width of its parent */
+    justify-content: center; /* Centers items along the line (left to right) */
+    align-items: center; /* Centers items along the cross-axis (top to bottom) */
+    object-fit: contain; /* Ensures the image scales down to fit, while maintaining its aspect ratio */
+}
