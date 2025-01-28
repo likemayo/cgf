@@ -33,10 +33,6 @@
                 margin-bottom: 5px;
             }
 
-            nav{
-                background-color: rgb(145, 47, 47);
-            }
-
             /* Sticky header CSS */
             .navbar {
                 position: -webkit-sticky; /* For Safari */
@@ -49,21 +45,61 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-light bg-light static-top">
+        <nav class="navbar navbar-light static-top">
             <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="index.html"><img src="CGF2025logo.png" style="height: 2em; width: 16em;"></a>
+                <a class="navbar-brand" href="index.html"><img src="CGF2025logo.png" style="height: 3em; width: auto;"></a>
                 <!-- links -->
                 <div class="d-flex">
-                    <a class="btn btn-primary" href="agenda.html">Agenda</a>
-                    <a class="btn btn-primary" href="partners.html">Speakers</a>
-                    <a class="btn btn-primary" href="about.html">Previous Events</a>
-                    <a class="btn btn-primary" href="faq.html">FAQ</a>
-                    <a class="btn btn-primary" href="https://nyuad.nyu.edu/en/events/2024/april/china-gulf-forum-2024.html">Register</a>
+                    <a class="btn btn-primary text-white" href="agenda.html">Panels</a>
+                    <a class="btn btn-primary text-white" href="partners.html">Team Member</a>
+                    <a class="btn btn-primary text-white" href="about.html">Previous Events</a>
+                    <a class="btn btn-primary text-white" href="https://nyuad.nyu.edu/en/events/2024/april/china-gulf-forum-2024.html">Register</a>
                 </div>
             </div>
         </nav>
+        <br>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="img1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="img2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="img3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="img4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="img5.jpg" style="width:100%">
+            </div>
+
+            <!-- next and previous button  -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
         
-        <div class="container position-relative" style="background-color: rgb(145, 47, 47);">
+        <!-- <div class="container position-relative" style="background-color: rgb(145, 47, 47);">
             <header class="masthead">
                     <div class="row justify-content-center">
                         <div class="col-xl-6">
@@ -77,34 +113,83 @@
                             </div>  
                         </div>
                     </div>
-                </header>
+            </header>
         </div>
-        <br> 
+        <br>  -->
 
         <section class="showcase">
-            <div class="row g-0">
+            <div class="row g-0" style="background-color:rgba(237, 230, 214, 0.5)">
                 <div class="col-lg-6 text-white showcase-img" style="background-image: url('cgf0.jpg')"></div>
                 <div class="col-lg-6 my-auto showcase-text">
-                    <h2 style="color: rgb(145, 47, 47);">About China Gulf Forum</h2>
-                    <p class="lead mb-0">The China-Gulf Forum was launched in 2019 at New York University Abu Dhabi (NYUAD) and is the first student-organized conference on China-Gulf relations in the United Arab Emirates. Over the past three iterations, China-Gulf Forum has accumulated over 1000 attendees from all over the world.
+                    <h2 style="color: rgb(145, 47, 47);">About China-Gulf Forum</h2>
+                    <p class="lead mb-0">Established in 2019, the China-Gulf Forum (CGF) is a pioneering and the inaugural student-led platform dedicated to fostering business,
+                        cultural, and academic exchanges between China and the Gulf region. What started at NYUAD has since grown into a global initiative with a
+                        significant impact.
                     </p>
                 </div>
             </div>
-            <div class="container-fluid p-0" id="aboutus">
+
+            <br>
+            <br>
+
+            <div class="container-fluid p-0" id="aboutus" style="background-color:rgba(237, 230, 214, 0.5)">
                 <div class="row g-0">
                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('cgf2.jpg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2 style="color: rgb(145, 47, 47);">Our Mission</h2>
-                        <p class="lead mb-0">Our mission is to address key aspects of the multilateral relationship between China and the Gulf region, with a target audience of students and young professionals, by bringing scholars, industry leaders, and government practitioners to share and discuss their expertise in the two regions.</p>
+                        <h2 style="color: rgb(145, 47, 47);">CGF 2025</h2>
+                        <p class="lead mb-0"> Within a global context, CGF 5.0 focuses on addressing the most critical and
+                            forward-looking areas of collaboration between China and the Gulf, tackling the
+                            most recent issues and opportunities.</p>
+                            <br>
+                        <p class="lead mb-0"> Anchored in leading educational institutions, CGF 5.0 aims to promote
+                            meaningful exchanges and collaboration among the next generation of leaders,
+                            scholars, and practitioners from China and the Gulf, strengthening ties and
+                            shaping a shared future.</p>
                     </div>
                 </div>
             </div>
+
+            <br>
+            <br>
+
+            <div class="row g-0" style="background-color:rgba(237, 230, 214, 0.5)">
+                <div class="col-lg-6 text-white showcase-img" style="background-image: url('cgf0.jpg')"></div>
+                <div class="col-lg-6 my-auto showcase-text">
+                    <h2 style="color: rgb(145, 47, 47);">Two Forums, One CGF </h2>
+                    <p class="lead mb-0">CGF Abu Dhabi - 19 April 2025 </p>
+                    <ul style="margin-left:2em">
+                        <li class="lead mb-0">Panel 1: Arts & Culture </li>
+                        <li class="lead mb-0">Panel 2: International Trade &
+                            Relations </li>
+                        <li class="lead mb-0">Panel 3: Technology &
+                            Innovation</li>
+                        <li class="lead mb-0">Panel 4: Business, Economic, and Finance </li>
+                    </ul>
+
+                    <p class="lead mb-0">CGF Beijing - 20 April 2025 </p>
+                    <ul style="margin-left:2em">
+                        <li class="lead mb-0">Panel 1: International Trade & Relations </li>
+                        <li class="lead mb-0">Panel 2: Business, Economic, and Finance </li>
+                    </ul>
+                </div>
+            </div>
+
+            
         </section>
 
-        <!-- Footer-->
-        <footer class="footer bg-light">
+        <br>
 
+        <!-- Footer-->
+        <footer>
+            <img src="CGF2025logo.png" style="height: 3em; width: auto;">
+            <section>
+                <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk0NDE5NTkwMQ==&scene=124#wechat_redirect" target="_blank" title="LinkedIn"><img src="wechat.svg" alt="wechat Icon" style="height:24px; width:24px"></a>
+                <a href="https://www.instagram.com/china_gulf_forum/" target="_blank" title="LinkedIn"><img src="instagram.svg" alt="instagram Icon" style="height:24px; width:24px"></a>
+                <a href="https://www.linkedin.com/company/china-gulf-forum/posts/?feedView=all" target="_blank" title="LinkedIn"><img src="linkedin.svg" alt="LinkedIn Icon"></a>
+                <a href="mailto:china-gulf-forum-nyuad@nyu.edu" title="Send Email"><img src="mail.png" alt="Email Icon"></a>
+            </section>
         </footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
