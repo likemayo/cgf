@@ -26,9 +26,11 @@
         }
 
         #contact{
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
             margin: 0 auto;
             width: 50%;
-            padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
             background-color: antiquewhite;
@@ -39,6 +41,24 @@
             width: 50%;
             padding: 20px;
             border-radius: 10px;
+        }
+        
+        .d-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .d-flex > div {
+            flex: 1;
+        }
+        
+        .d-flex div:first-child {
+            margin-right: 20px; /* Adds spacing between form and location */
+        }
+        
+        h3 {
+            text-align: right; /* Aligns location text to the right */
         }
 
     </style>
@@ -76,7 +96,7 @@
                 </div>
 
                 <div>
-                    <p>Location: Saddiyat Island, New York University Abu Dhabi</p>
+                    <h3>Location: Saddiyat Island, New York University Abu Dhabi</h3>
                 </div>
             </div>
 
