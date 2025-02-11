@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Contact Us</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mpwqjqoe" method="POST">
+        <!-- Name Input -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
 
-    <body>
+        <!-- Email Input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
 
-    </body>
+        <!-- Message Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter your message" required></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Send</button>
+    </form>
+</body>
 </html>
