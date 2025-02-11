@@ -23,6 +23,7 @@
         }
 
         #contact{
+            display: flex;
             margin: 0 auto;
             width: 50%;
             padding: 20px;
@@ -58,22 +59,28 @@
     <br>
 
     <div id="contact">
-        <h2>Contact Form</h2>
-        <form action="https://formspree.io/f/mpwqjqoe" method="POST">
-            <!-- Name Input -->
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <div>
+            <h2>Contact Form</h2>
+            <form action="https://formspree.io/f/mpwqjqoe" method="POST">
+                <!-- Name Input -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
 
-            <!-- Email Input -->
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email" size="40" required><br><br>
+                <!-- Email Input -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" size="40" required><br><br>
 
-            <!-- Message Textarea -->
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter your message" required></textarea><br><br>
+                <!-- Message Textarea -->
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter your message" required></textarea><br><br>
 
-            <!-- Submit Button -->
-            <button type="submit">Send</button>
+                <!-- Submit Button -->
+                <button type="submit">Send</button>
+            </div>
+            
+            <div>
+                <p>Location: Saddiyat Island, New York University Abu Dhabi</p>
+            </div>
         </form>
     </div>
 
