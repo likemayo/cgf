@@ -15,6 +15,59 @@
   src: url('../BagnardSans.otf') format('opentype');
 }
 
+.carousel{
+  max-width: 1000px; 
+  position: relative;
+  margin: auto;
+
+
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+    
+  border-radius: 5px;
+
+  .carousel-slide {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 500%;/* Adjust based on the number of images */
+    animation: carousel-animation 20s infinite alternate; /* Adjust duration as needed */
+  }
+}
+
+.carousel-slide img {
+  width: calc(100% / 5); /* Adjust based on the number of images */
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes carousel-animation {
+  /* Adjust based on the number of images */
+  /* 3 image animation */
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-20%);
+  }
+  60% {
+    transform: translateX(-40%);
+  }
+  80% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
 .slideshow-container {
   max-width: 1000px; 
   position: relative;

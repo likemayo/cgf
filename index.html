@@ -41,6 +41,17 @@
                 z-index: 1000;
                 background-color: rgb(145, 47, 47); /* Ensure the background matches your design */
             }
+            .mySlides {
+                position: absolute;  /* Stack slides on top of each other */
+                width: 100%;
+                height: auto;
+                opacity: 0;  /* Start hidden */
+                transition: opacity 1s ease-in-out;  /* Smooth fade effect */
+            }
+
+            .mySlides.active {
+                opacity: 1;  /* Fully visible */
+            }
         </style>
     </head>
 
@@ -60,35 +71,46 @@
         </nav>
         <br>
 
-        <div class="slideshow-container">
-            <div class="mySlides fade">
+        <!-- <div class="slideshow-container"> -->
+            <!-- <div class="mySlides">
                 <div class="numbertext">1 / 5</div>
                 <img src="img1.jpg" style="width:100%">
             </div>
             
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">2 / 5</div>
                 <img src="img2.jpg" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">3 / 5</div>
                 <img src="img3.jpg" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">4 / 5</div>
                 <img src="img4.jpg" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">5 / 5</div>
                 <img src="img5.jpg" style="width:100%">
-            </div>
+            </div> -->
 
             <!-- next and previous button  -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+        <!-- </div> -->
+
+        <div class="carousel"> 
+            <div class="carousel-slide">
+                <img src="img1.jpg" alt="Image 1" />
+                <img src="img2.jpg" alt="Image 2" />
+                <img src="img3.jpg" alt="Image 3" />
+                <img src="img4.jpg" alt="Image 4" />
+                <img src="img5.jpg" alt="Image 5" />
+            </div>
         </div>
 
         <!-- The dots/circles -->
@@ -154,7 +176,7 @@
             <br>
 
             <div class="row g-0" style="background-color:rgba(237, 230, 214, 0.5)">
-                <div class="col-lg-6 text-white showcase-img" style="background-image: url('cgf0.jpg')"></div>
+                <div class="col-lg-6 text-white showcase-img" style="background-image: url('cgf3.jpg')"></div>
                 <div class="col-lg-6 my-auto showcase-text">
                     <h2 style="color: rgb(145, 47, 47);">Two Forums, One CGF </h2>
                     <p class="lead mb-0">CGF Abu Dhabi - 19 April 2025 </p>
