@@ -5,22 +5,22 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
-let slideIndex = 0;
-let slides = document.getElementsByClassName("mySlides");
+// let slideIndex = 0;
+// let slides = document.getElementsByClassName("mySlides");
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
-  }
-  slideIndex++;
-  if (slideIndex >= slides.length) {slideIndex = 0}
-  slides[slideIndex].classList.add("active");
-  setTimeout(showSlides, 2500); // Change image every 2 seconds
-}
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].classList.remove("active");
+//   }
+//   slideIndex++;
+//   if (slideIndex >= slides.length) {slideIndex = 0}
+//   slides[slideIndex].classList.add("active");
+//   setTimeout(showSlides, 2500); // Change image every 2 seconds
+// }
 
-window.onload = function() {
-  slides[slideIndex].classList.add("active"); // Show the first slide
-  setTimeout(showSlides, 2500);
-};
+// window.onload = function() {
+//   slides[slideIndex].classList.add("active"); // Show the first slide
+//   setTimeout(showSlides, 2500);
+// };
