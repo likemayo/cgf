@@ -80,7 +80,23 @@
                 height: 300px;
                 perspective: 1000px;
                 margin: 20px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+                position: relative;
+                z-index: 1;
             }
+
+            /* On hover: enlarge the hovered card */
+            .team-member:hover {
+                transform: scale(1.1);
+                z-index: 3;
+            }
+
+            .team-member.adjacent {
+                transform: scale(1.05);
+                z-index: 2;
+            }
+
             .flip-card-inner {
                 width: 100%;
                 height: 100%;
